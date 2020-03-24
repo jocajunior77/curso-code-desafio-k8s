@@ -2,9 +2,7 @@ steps:
 
 - id: go_test
   name: "gcr.io/cloud-builders/go"
-  args: ["test","./etapa3"]
-  env:
-    - 'GOPATH=$PWD'
+  args: ["test","./etapa3/*.go"]
 
 - id: go_build
   name: "gcr.io/cloud-builders/go"
