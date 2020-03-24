@@ -1,5 +1,10 @@
 steps:
 
+- id: go_get
+  name: "gcr.io/cloud-builders/go"
+  args: ["get","-d","-v"]
+  env: ["GOPATH=/workspace/gopath"]
+
 - id: go_test
   name: "gcr.io/cloud-builders/go"
   args: ["test","./etapa3"]
