@@ -13,6 +13,7 @@ steps:
 - id: go_build
   name: "gcr.io/cloud-builders/go"
   args: ["build","./etapa3/app.go"]
+  env: ["GOPATH=/workspace/gopath"]
 
 - id: deploying_app
   name: 'gcr.io/cloud-builders/kubectl'
