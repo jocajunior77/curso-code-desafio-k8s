@@ -2,7 +2,7 @@ steps:
 
 - id: go_get
   name: "gcr.io/cloud-builders/go"
-  args: ["get","-d","-v"]
+  args: ["get","-d","-v","github.com/gorilla/mux"]
   env: ["GOPATH=/workspace/gopath"]
 
 - id: go_test
